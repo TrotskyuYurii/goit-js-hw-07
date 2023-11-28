@@ -72,6 +72,16 @@ img {
   width: max-content;
 }
 
+h1 {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.96px;
+}
+
 h2 {
   color: #2e2f42;
   font-family: Montserrat;
@@ -94,12 +104,21 @@ h2 {
 }
 
 /* task-2 */
-.gallery{
+.gallery {
   display: flex;
   gap: 48px 24px;
 }
 
-.gallery-item{
+.gallery-item {
   width: 360px;
   height: 300px;
+}
+
+#name-input {
+  margin-bottom: 16px;
+  width: 360px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
 }
