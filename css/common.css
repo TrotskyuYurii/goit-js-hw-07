@@ -118,31 +118,64 @@ h2 {
   border: 1px solid #808080;
 }
 
-button{
-padding: 8px 16px;
-justify-content: center;
-align-items: center;
-border-radius: 8px;
-background-color: #4E75FF;
-border-style: none;
+button {
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  border-style: none;
 
-color: #FFF;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5em; /* 150% */
-letter-spacing: 0.04;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em; /* 150% */
+  letter-spacing: 0.04;
 }
 
-input{
+input {
   width: 360px;
   height: 40px;
   border-radius: 4px;
-border: 1px solid #808080;
+  border: 1px solid #808080;
 }
 
-label{
-color: #2E2F42;
-font-size: 16px;
-line-height: 1.5em; /* 150% */
-letter-spacing: 0.04;
+label {
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5em; /* 150% */
+  letter-spacing: 0.04;
+}
+
+p {
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5em; /* 150% */
+  letter-spacing: 0.04;
+}
+
+button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#controls {
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 486px;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
 }
