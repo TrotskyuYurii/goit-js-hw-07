@@ -59,8 +59,7 @@ img {
   height: auto;
 }
 
-/* new style */
-
+/* task-1 */
 .item {
   display: flex;
   padding: 16px;
@@ -92,4 +91,15 @@ h2 {
   margin-bottom: 8px;
   padding-left: 16px;
   line-height: 40px;
+}
+
+/* task-2 */
+.gallery{
+  display: flex;
+  gap: 48px 24px;
+}
+
+.gallery-item{
+  width: 360px;
+  height: 300px;
 }

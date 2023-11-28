@@ -17,10 +17,15 @@ const images = [
 const gallery       = document.querySelector('.gallery');
 
 for (let galItem of images) {
-  const galeryElement = document.createElement('img');
-  galeryElement.classList.add('gallery-item');
-  galeryElement.src   = galItem.url;
-  galeryElement.alt   = galItem.alt;
-  gallery.append(galeryElement);
+  const listItem = document.createElement('li');
+  const imgElement = document.createElement('img');
+
+  imgElement.src = galItem.url;
+  imgElement.alt = galItem.alt;
+  imgElement.classList.add('gallery-item');
+  
+
+  listItem.appendChild(imgElement);
+  gallery.appendChild(listItem);
 }
 
