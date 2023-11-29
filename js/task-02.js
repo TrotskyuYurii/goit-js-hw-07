@@ -14,18 +14,19 @@ const images = [
 ];
 
 
-const gallery       = document.querySelector('.gallery');
+const gallery = document.querySelector('.gallery');
+const fragment = document.createDocumentFragment();
 
-for (let galItem of images) {
+for (let img of images) {
   const listItem = document.createElement('li');
   const imgElement = document.createElement('img');
+  listItem.classList.add('gallery-item');
 
-  imgElement.src = galItem.url;
-  imgElement.alt = galItem.alt;
-  imgElement.classList.add('gallery-item');
-  
+  imgElement.src = img.url;
+  imgElement.alt = img.alt;
 
   listItem.appendChild(imgElement);
-  gallery.appendChild(listItem);
+  fragment.appendChild(listItem);
 }
 
+gallery.appendChild(fragment);
